@@ -1,0 +1,11 @@
+version: '3'
+services:
+  dashboard.03:
+    image: qrr-dash.03:latest
+    ports:
+      - "8050:8050"
+    environment:
+      - MARIADB_PROD_USER=qrr_read_analytics
+      - MARIADB_PROD_PASS=Moe24S4SG49Ivj0EKcMWxYread
+      - MARIADB_PRODDB_HOST=analytics-db.cgsdwsart7rn.sa-east-1.rds.amazonaws.com
+      - MARIADB_PROD_DB_NAME=analytics_db
